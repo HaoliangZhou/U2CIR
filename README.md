@@ -102,7 +102,6 @@ CL-FIQ&Shoe is annotated on `FashionIQ` and `Shoes` images:
 
 
 ## Train and Evaluation
-### Training
 1. Modify the file paths of the dataset in `configs/base_seqF_natural[/fashion].yaml` to your path.
 2. Modify the **LOG_NAME** and **OUT_DIR** in `shell/seq_xxx.sh` to your storage path. `xxx` represents the name of the method.
 3. Change the current path to the `shell` folder, and run the corresponding scripts `seq_xxx.sh`.
@@ -111,10 +110,3 @@ CL-FIQ&Shoe is annotated on `FashionIQ` and `Shoes` images:
     sh seq_xxx.sh
     ```
 4. The corresponding training log will be written in the `logger` folder.
-   
-### Evaluation
-1. Modify the **LOG_NAME** and **OUT_DIR** in `eval.sh` to the storage path of the trained model. 
-2. Run the evaluation script `eval.sh`.
-    ```
-    sh eval.sh
-    ```
