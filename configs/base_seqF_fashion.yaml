@@ -1,0 +1,29 @@
+scene_train: 'fashion_train'
+scene_test: 'fashion_test'
+train_file: './C2IR_Benchmarks/CL-FIQ&Shoe/CL-FIQ&Shoe_train.json'
+test_file: './C2IR_Benchmarks/CL-FIQ&Shoe/CL-FIQ&Shoe_test.json'
+train_image_root: '/data/fashion-iq[shoes]/'
+test_image_root: '/data/fashion-iq[shoes]/'
+
+
+vit: 'base'
+vit_grad_ckpt: True
+vit_ckpt_layer: 11
+fix_layer: 0
+image_size: 224
+batch_size_train: 64
+batch_size_test: 512
+
+# optimizer
+weight_decay: 0.05
+init_lr: 1e-4
+min_lr: 1e-6
+k_test: 50
+max_words: 30
+window_size: 100
+
+#CL
+max_epoch: 4
+task: ['dress', 'shirt', 'toptee', 'shoes']
+base_mode: 'seqF'
+
